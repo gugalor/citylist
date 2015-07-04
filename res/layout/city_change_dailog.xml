@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@+id/changecitybg" android:background="#00000000"
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/dialog_layout" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+           >
+        <LinearLayout android:orientation="vertical" android:background="#00000000"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/topPanel"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          android:layout_marginTop="28.0dip">
+                <TextView android:textSize="@dimen/wb_dialog_title_size" android:textColor="@color/dialog_title_color"
+                          android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="@string/assistant_upload_dialog_title"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/content_wrap" android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel"
+                              android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/message_layout"
+                                  android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/wb_dialog_content_size"
+                                  android:textColor="@color/dialog_content_color"
+                                  android:layout_gravity="center_horizontal" android:id="@+id/city_change_msg"
+                                  android:visibility="visible" android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content" android:text="messgae"/>
+                        <TextView android:textSize="@dimen/wb_dialog_content_size"
+                                  android:textColor="@color/dialog_content_color"
+                                  android:layout_gravity="center_horizontal" android:id="@+id/message_hint"
+                                  android:visibility="gone" android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/dialog_blue" android:layout_width="fill_parent"
+                  android:layout_height="1.0px" android:layout_marginTop="28.0dip"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/buttonPanel"
+                          android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/leftSpacer" android:visibility="gone"
+                              android:layout_width="0.0dip" android:layout_height="wrap_content"
+                              android:layout_weight="0.5"/>
+                <Button android:textSize="18.0sp" android:textColor="@color/dialog_blue"
+                        android:id="@+id/city_change_again" android:background="@null" android:layout_width="0.0dip"
+                        android:layout_height="40.0dip" android:text="切换" android:layout_weight="1.0"/>
+                <View android:id="@+id/dialog_btn_divider" android:background="@color/dialog_blue"
+                      android:layout_width="1.0px" android:layout_height="fill_parent"/>
+                <Button android:textSize="18.0sp" android:textColor="@color/dialog_blue"
+                        android:id="@+id/city_change_cancel" android:background="@null" android:visibility="visible"
+                        android:layout_width="0.0dip" android:layout_height="40.0dip"
+                        android:text="@string/quit_dialog_cancel" android:layout_weight="1.0"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rightSpacer" android:visibility="gone"
+                              android:layout_width="0.0dip" android:layout_height="wrap_content"
+                              android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>

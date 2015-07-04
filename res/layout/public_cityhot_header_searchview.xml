@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent"
+                android:layout_height="@dimen/wb_city_search_ablum_height"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/city_search_bg"
+                    android:layout_width="fill_parent" android:layout_height="32.0dip"
+                    android:layout_marginLeft="@dimen/city_search_margin_landr_dimen" android:layout_marginTop="6.0dip"
+                    android:layout_marginRight="@dimen/city_search_margin_landr_dimen"
+                    android:layout_marginBottom="6.0dip">
+        <ImageView android:id="@+id/search_check" android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" android:layout_marginLeft="9.0dip"
+                   android:src="@drawable/wb_letter_search_normal" android:layout_alignParentLeft="true"
+                   android:layout_centerVertical="true"/>
+        <TextView android:textSize="12.0sp" android:textColor="#ff94989d" android:gravity="center_vertical"
+                  android:id="@+id/city_search_edittext" android:layout_width="fill_parent"
+                  android:layout_height="fill_parent" android:layout_marginLeft="5.0dip"
+                  android:text="@string/city_hotcity_searchedittext_hint" android:layout_toRightOf="@id/search_check"
+                  android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

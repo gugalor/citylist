@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/city_list_margin_left_dimen"
+                android:paddingRight="@dimen/city_list_margin_right_dimen" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gugalor.adapter.MyGridView android:id="@+id/public_hotcity_list" android:scrollbars="none"
+                                       android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                       android:listSelector="@android:color/transparent"
+                                       android:horizontalSpacing="10.0dip"
+                                       android:verticalSpacing="10.0dip" android:numColumns="3"/>
+</RelativeLayout>

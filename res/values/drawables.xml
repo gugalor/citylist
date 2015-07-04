@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="ll_list_bg_normal">#00000000</item>
+    <item type="drawable" name="ll_list_bg_press">#ffdddddd</item>
+    <item type="drawable" name="robhouse_dialog_list_normal">#ffffffff</item>
+    <item type="drawable" name="wb_title_text_disabled">#fffcb8a6</item>
+    <item type="drawable" name="wb_title_text_normal">#ffff6622</item>
+    <item type="drawable" name="wb_title_text_pressed">#ffcc5223</item>
+</resources>

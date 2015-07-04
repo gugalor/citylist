@@ -1,0 +1,12 @@
+<resources>
+    <string name="city_show_text_hot">热门城市</string>
+    <string name="city_hotcity_curlocationcity_text">定位城市</string>
+    <string name="third_title_close">关闭</string>
+    <string name="city_hotcity_searchedittext_hint">请输入城市名称查询</string>
+    <string name="xml_loading_01">加载中</string>
+
+    <string name="cancel">取消</string>
+    <string name="app_name">城市列表</string>
+    <string name="quit_dialog_cancel">取 消</string>
+    <string name="assistant_upload_dialog_title">提示</string>
+</resources>

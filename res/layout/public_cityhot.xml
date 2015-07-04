@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/city_home_layout" android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+        <include android:id="@+id/city_home" layout="@layout/public_title"/>
+        <include android:id="@+id/home_edittext_layout" layout="@layout/public_cityhot_header_searchview"/>
+
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@+id/public_allcity_list" android:background="@color/city_search_bg"
+                      android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      android:layout_marginTop="0.0dip" android:listSelector="@android:color/transparent"
+                      android:cacheColorHint="@android:color/transparent"
+                      android:divider="@null"/>
+            <com.gugalor.citylist.MyLetterListView
+                    android:id="@+id/cityLetterListView"
+                    android:layout_width="40dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000" />
+        </RelativeLayout>
+    </LinearLayout>
+   </RelativeLayout>

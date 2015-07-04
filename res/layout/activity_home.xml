@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/TitleBar" >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+        <TextView
+                android:id="@+id/home_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableRight="@drawable/btn_choose_city_normal"
+                android:gravity="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:text="北京市"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/home_location_textsize" />
+
+
+
+
+ </RelativeLayout>
+
+</RelativeLayout>

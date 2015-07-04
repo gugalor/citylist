@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/city_search_bg" android:paddingLeft="@dimen/city_list_margin_left_dimen"
+                android:paddingTop="@dimen/city_hot_margin_top"
+                android:paddingRight="@dimen/city_list_margin_right_dimen"
+                android:paddingBottom="@dimen/city_hot_margin_bottom" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/city_header_text" android:text="@string/city_show_text_hot"
+              style="@style/city_hot_header"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="120" android:drawable="@drawable/city_locating_frame3" />
+    <item android:duration="120" android:drawable="@drawable/city_locating_frame2" />
+    <item android:duration="120" android:drawable="@drawable/city_locating_frame1" />
+</animation-list>
