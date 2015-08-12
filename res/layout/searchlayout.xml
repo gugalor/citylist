@@ -17,25 +17,34 @@
                      android:duplicateParentState="true"
                      android:layout_width="@dimen/title_bar_button_size"
                      android:layout_height="fill_parent" android:src="@drawable/ic_back_u"/>
-        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
-                      android:background="@drawable/bg_shop_search" android:layout_width="fill_parent"
-                      android:layout_height="wrap_content" android:layout_weight="1.0">
-            <EditText android:textSize="17.0sp" android:textColor="@color/uniform_black"
-                      android:textColorHint="@color/uniform_light_gray" android:gravity="center_vertical"
-                      android:id="@+id/input" android:background="@null" android:layout_width="fill_parent"
-                      android:layout_height="wrap_content" android:hint="@string/city_hotcity_searchedittext_hint"
+        <RelativeLayout android:layout_gravity="center_vertical" android:background="@drawable/city_search_bg"
+                        android:layout_width="fill_parent" android:layout_height="32.0dip"
+                        android:layout_marginTop="6.0dip"
+                        android:layout_marginBottom="6.0dip">
+            <ImageView android:id="@+id/search_check" android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" android:layout_marginLeft="9.0dip"
+                       android:src="@drawable/wb_letter_search_normal" android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true"/>
+            <EditText android:textSize="12.0sp"
+                      android:textColor="@color/uniform_black"
+                      android:textColorHint="@color/uniform_light_gray"
+                      android:background="@null"
                       android:singleLine="true"
-                      android:drawableLeft="@drawable/icon_search" android:drawablePadding="7.0dip"
-                      android:layout_weight="1.0" android:imeOptions="actionDone"/>
+                      android:imeOptions="actionDone"
+                      android:id="@+id/input"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="5.0dip"
+                      android:hint="@string/city_hotcity_searchedittext_hint"
+                      android:layout_toRightOf="@id/search_check"
+                      android:layout_centerVertical="true"/>
             <ImageButton android:id="@+id/clear" android:background="@drawable/btn_gray_delete_selector"
-                         android:visibility="gone"
+                         android:visibility="visible"
                          android:layout_width="wrap_content"
-                         android:layout_height="wrap_content" android:layout_marginRight="2.0dip"/>
-        </LinearLayout>
-        <!--<TextView android:textSize="16.0sp" android:textColor="@color/topbar_edge_color" android:gravity="center"-->
-                  <!--android:id="@+id/right" android:background="@drawable/btn_search_selector"-->
-                  <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-                  <!--android:layout_marginLeft="10.0dip" android:text="@string/cancel"/>-->
+                         android:layout_height="wrap_content"
+                         android:layout_alignRight="@+id/input"
+                         android:layout_marginRight="9.0dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
     </LinearLayout>
 
     <ListView
