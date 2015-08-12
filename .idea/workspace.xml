@@ -23,31 +23,7 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d230142-b21e-42d5-8233-aed92d75c370" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/empty_page_search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_back_u.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gugalor/model/BaseContacts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gugalor/citylist/CitysearchNonAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gugalor/model/Contacts.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gugalor/helper/ContactsHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gugalor/application/PinyinSearchApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/city_search_list_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/clickable_white_to_gray.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/empty_search_city_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/gugalor/citylist/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/gugalor/citylist/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gugalor/citylist/CityList.java" afterPath="$PROJECT_DIR$/src/com/gugalor/citylist/CityList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gugalor/citylist/CitysearchAdapter.java" afterPath="$PROJECT_DIR$/src/com/gugalor/citylist/CitysearchAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gugalor/citylist/citychangdialog.java" afterPath="$PROJECT_DIR$/src/com/gugalor/citylist/citychangdialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/citylist.iml" afterPath="$PROJECT_DIR$/citylist.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/color.xml" afterPath="$PROJECT_DIR$/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gugalor/citylist/searchactivity.java" afterPath="$PROJECT_DIR$/src/com/gugalor/citylist/searchactivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/searchlayout.xml" afterPath="$PROJECT_DIR$/res/layout/searchlayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="8d230142-b21e-42d5-8233-aed92d75c370" name="Default" comment="add pingyin search">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="citylist.iws" />
@@ -447,6 +423,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -746,12 +723,19 @@
       <workItem from="1435923889073" duration="7333000" />
       <workItem from="1435970718322" duration="5063000" />
       <workItem from="1439273054312" duration="14601000" />
-      <workItem from="1439340900618" duration="10684000" />
+      <workItem from="1439340900618" duration="10892000" />
     </task>
+    <task id="LOCAL-00001" summary="add pingyin search">
+      <created>1439363250883</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1439363250883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37681000" />
+    <option name="totallyTimeSpent" value="37889000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -798,6 +782,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add pingyin search" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pingyin search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
