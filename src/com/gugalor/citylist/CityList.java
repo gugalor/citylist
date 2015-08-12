@@ -17,12 +17,12 @@ import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.gugalor.adapter.HotCityGridAdapter;
+import com.gugalor.helper.ContactsHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-
 /**
  * 城市选择
  *
@@ -128,12 +128,14 @@ public class CityList extends Activity {
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-finish();
+                finish();
             }
         });
         citysearch.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                boolean startLoad = ContactsHelper.getInstance().startLoadContacts();
+
                 Intent intent = new Intent(CityList.this, searchactivity.class);
                 startActivityForResult(intent, 2);
                 return false;
@@ -168,7 +170,7 @@ finish();
         city_locate_state.setVisibility(View.VISIBLE);
         city_locating_progress.setVisibility(View.VISIBLE);
         city_locate_success_img.setVisibility(View.GONE);
-        city_locate_state.setText("定位中");
+        city_locate_state.setText(getString(R.string.locating));
         if (locationClient == null) {
             locationClient = new LocationClient(CityList.this);
             locationClient.registerLocationListener(new LocationListenner());
@@ -289,10 +291,10 @@ finish();
             sections = new String[list.size()];
 
             for (int i = 0; i < list.size(); i++) {
-                // 
+                //
                 // getAlpha(list.get(i));
                 String currentStr = list.get(i).getNameSort();
-                //  
+                //
                 String previewStr = (i - 1) >= 0 ? list.get(i - 1)
                         .getNameSort() : " ";
                 if (!previewStr.equals(currentStr)) {
@@ -365,17 +367,15 @@ finish();
                 WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
                         | WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
                 PixelFormat.TRANSLUCENT);
-         windowManager = (WindowManager) this
+        windowManager = (WindowManager) this
                 .getSystemService(Context.WINDOW_SERVICE);
         windowManager.addView(overlay, lp);
     }
-
     @Override
     protected void onDestroy() {
-      windowManager.removeViewImmediate(overlay);
+        windowManager.removeView(overlay);
         super.onDestroy();
     }
-
     private class LetterListViewListener implements
             MyLetterListView.OnTouchingLetterChangedListener {
 

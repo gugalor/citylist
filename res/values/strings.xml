@@ -1,8 +1,14 @@
 <resources>
+    <string name="locating">定位中</string>
+    <string name="search">搜索</string>
+    <string name="notfound">抱歉，未找到！</string>
+    <string name="key_word">请输入关键字</string>
+    <string name="locatez_as">定位为</string>
+    <string name="switch_ornot">，是否切换？</string>
     <string name="city_show_text_hot">热门城市</string>
     <string name="city_hotcity_curlocationcity_text">定位城市</string>
     <string name="third_title_close">关闭</string>
-    <string name="city_hotcity_searchedittext_hint">请输入城市名称查询</string>
+    <string name="city_hotcity_searchedittext_hint">请输入城市名,首字母或拼音</string>
     <string name="xml_loading_01">加载中</string>
 
     <string name="cancel">取消</string>

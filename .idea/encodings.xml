@@ -3,7 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/libs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/BaiduLBS_Android.jar" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/res/anim/alpha.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/color" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/btn_choose_city_normal.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/city_switch_pressed.9.png" charset="UTF-8" />
@@ -65,9 +64,9 @@
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/CityList.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/CityModel.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/CitysearchAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/CitysearchNonAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/DBManager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/MyLetterListView.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/ParabolaTranslateAnimation.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/Setting.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/citychangdialog.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/gugalor/citylist/searchactivity.java" charset="UTF-8" />

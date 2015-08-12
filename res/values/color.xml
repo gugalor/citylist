@@ -4,9 +4,14 @@
  <color name="hui">#ff7e7e7e</color>
  <color name="group_top">#fffdfdfd</color>
  <color name="black">#ff171717</color>
-	<color name="orange">#ffff8200</color>
-    <color name="white">#ffffff</color>
-    <color name="gray">#B2B8AD</color>
+ <color name="line_gray">#ffd7d7d7</color>
+ <color name="deep_gray">#ff333333</color>
+ <color name="orange">#ffff8200</color>
+ <color name="light_gray">#ff999999</color>
+ <color name="white">#ffffff</color>
+ <color name="inner_divider">#ffe1e1e1</color>
+ <color name="click_gray">#ffd9d9d9</color>
+ <color name="gray">#B2B8AD</color>
     <color name="nomal_gray_bg">#ffeff0f2</color>
     <color name="nomal_text_hei">#ff585858</color>
     <color name="listcolor">#fffff4de</color>

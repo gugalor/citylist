@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:gravity="center_horizontal"
-              android:background="#f7f3ef"
+              android:background="@color/white"
         >
 
     <LinearLayout
@@ -13,6 +13,10 @@
             android:background="@drawable/topbar_bg" android:paddingLeft="7.0dip"
             android:paddingRight="7.0dip"
             android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/left_title_button" android:background="@null"
+                     android:duplicateParentState="true"
+                     android:layout_width="@dimen/title_bar_button_size"
+                     android:layout_height="fill_parent" android:src="@drawable/ic_back_u"/>
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal"
                       android:background="@drawable/bg_shop_search" android:layout_width="fill_parent"
                       android:layout_height="wrap_content" android:layout_weight="1.0">
@@ -28,10 +32,10 @@
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content" android:layout_marginRight="2.0dip"/>
         </LinearLayout>
-        <TextView android:textSize="16.0sp" android:textColor="@color/topbar_edge_color" android:gravity="center"
-                  android:id="@+id/right" android:background="@drawable/btn_search_selector"
-                  android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:layout_marginLeft="10.0dip" android:text="@string/cancel"/>
+        <!--<TextView android:textSize="16.0sp" android:textColor="@color/topbar_edge_color" android:gravity="center"-->
+                  <!--android:id="@+id/right" android:background="@drawable/btn_search_selector"-->
+                  <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                  <!--android:layout_marginLeft="10.0dip" android:text="@string/cancel"/>-->
     </LinearLayout>
 
     <ListView

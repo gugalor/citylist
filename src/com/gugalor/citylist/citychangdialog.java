@@ -32,7 +32,7 @@ public class citychangdialog extends Dialog {
         city_change_again = (Button) view.findViewById(R.id.city_change_again);
         city_change_cancel = (Button) view.findViewById(R.id.city_change_cancel);
         changmsg = (TextView) view.findViewById(R.id.city_change_msg);
-        changmsg.setText("定位为"+cityName+",是否切换？");
+        changmsg.setText(context.getString(R.string.locatez_as)+cityName+context.getString(R.string.switch_ornot));
         city_change_again.setOnClickListener(new clickListener());
         city_change_cancel.setOnClickListener(new clickListener());
     }

@@ -6,22 +6,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import com.gugalor.model.Contacts;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by gugalor on 14-5-31.
  */
 public class CitysearchAdapter extends BaseAdapter {
-    private ArrayList<CityModel> mList;
+    private List<Contacts> mList;
     private Context mContext;
 
-    public CitysearchAdapter(ArrayList<CityModel> list, Context context) {
+    public CitysearchAdapter(List<Contacts> list, Context context) {
         mList = list;
         mContext = context;
     }
 
-    public void refresh(ArrayList<CityModel> list) {
+    public void refresh(List<Contacts> list) {
         mList = list;
         notifyDataSetChanged();
     }
@@ -45,17 +46,17 @@ public class CitysearchAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Holder holder = null;
-        if (convertView == null) {
-            LayoutInflater inflater = LayoutInflater.from(mContext);
-            convertView = inflater.inflate(R.layout.bookname_list, null);
-            holder = new Holder();
-            holder.mNameText = (TextView)convertView.findViewById(R.id.bookname);
-            convertView.setTag(holder);
-        } else {
-            holder = (Holder) convertView.getTag();
-        }
-        final CityModel cityModel = (CityModel)mList.get(position);
-        holder.mNameText.setText(cityModel.getCityName());
+            if (convertView == null) {
+                LayoutInflater inflater = LayoutInflater.from(mContext);
+                convertView = inflater.inflate(R.layout.city_search_list_item, null);
+                holder = new Holder();
+                holder.mNameText = (TextView) convertView.findViewById(R.id.area);
+                convertView.setTag(holder);
+            } else {
+                holder = (Holder) convertView.getTag();
+            }
+            final Contacts cityModel = (Contacts) mList.get(position);
+            holder.mNameText.setText(cityModel.getName());
         return convertView;
     }
 

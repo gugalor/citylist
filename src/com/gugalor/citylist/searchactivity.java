@@ -6,9 +6,12 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.*;
+import com.gugalor.helper.ContactsHelper;
+import com.gugalor.model.Contacts;
 
 import java.util.ArrayList;
 
@@ -18,12 +21,8 @@ import java.util.ArrayList;
 public class searchactivity extends Activity {
     ListView searchresult;
     private EditText input;
-    private ImageButton clear;
-    private TextView right;
-    Boolean isEmpty = true;
-    //  ArrayAdapter<String> adapter;
+    private ImageButton clear,left;
     private SQLiteDatabase database;
-    private ArrayList<CityModel> mCityNames=new ArrayList<CityModel>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +31,7 @@ public class searchactivity extends Activity {
         searchresult = (ListView) findViewById(R.id.searchresult);
         input = (EditText) findViewById(R.id.input);
         clear = (ImageButton) findViewById(R.id.clear);
-        right = (TextView) findViewById(R.id.right);
+        left=(ImageButton)findViewById(R.id.left_title_button);
         database = SQLiteDatabase.openOrCreateDatabase(DBManager.DB_PATH + "/" + DBManager.DB_NAME, null);
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,37 +39,23 @@ public class searchactivity extends Activity {
                 input.setText("");
             }
         });
-        final CitysearchAdapter adapter = new CitysearchAdapter(mCityNames, this);
-        right.setOnClickListener(new View.OnClickListener() {
+        final CitysearchAdapter adapter = new CitysearchAdapter(ContactsHelper.mSearchContacts, this);
+        left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(right.getText().equals("取消"))
-                    finish();
-                else{
-                String NAMA=input.getText().toString();
-                if(NAMA.equals(""))
-                    input.setHint("请输入关键字");
-                else
-                mCityNames = getCityNames(NAMA);
-                if(mCityNames.isEmpty())
-                Toast.makeText(searchactivity.this, "抱歉，未找到！", Toast.LENGTH_SHORT).show();
-                else
-                adapter.refresh(mCityNames);
-                }
+                finish();
             }
         });
 
-
-        //adapter = new ArrayAdapter<String>(this, R.layout.bookname_list, mCityNames);
         searchresult.setAdapter(adapter);
         searchresult.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                final CityModel cityModel = (CityModel)mCityNames.get(position);
+                final Contacts cityModel = (Contacts)ContactsHelper.mSearchContacts.get(position);
     			Setting.Save2SharedPreferences(searchactivity.this, "city",
-    					cityModel.getCityName());
+    					cityModel.getName());
                 Intent intent =new Intent();
-                intent.putExtra("city",cityModel.getCityName());
+                intent.putExtra("city",cityModel.getName());
                 setResult(RESULT_OK,intent);
     			finish();
 
@@ -81,8 +66,21 @@ public class searchactivity extends Activity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                clear.setVisibility(View.INVISIBLE);
-                right.setText("搜索");
+                String curCharacter=s.toString().trim();
+
+                if(TextUtils.isEmpty(curCharacter)){
+                    clear.setVisibility(View.INVISIBLE);
+                    ContactsHelper.getInstance().parseQwertyInputSearchContacts(null);
+                }else{
+                    clear.setVisibility(View.VISIBLE);
+                    ContactsHelper.getInstance().parseQwertyInputSearchContacts(curCharacter);
+                }
+                if(ContactsHelper.mSearchContacts.size()==0){
+                    searchresult.setAdapter(new CitysearchNonAdapter(searchactivity.this));
+                }else {
+                    searchresult.setAdapter(adapter);
+                    adapter.refresh(ContactsHelper.mSearchContacts);
+                }
             }
 
             @Override
@@ -94,7 +92,6 @@ public class searchactivity extends Activity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before,
                                       int count) {
-//                input.setText(s);
             }
 
         });

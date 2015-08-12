@@ -142,5 +142,11 @@
     <dimen name="dimen_73px">73dp</dimen>
     <dimen name="dimen_74px">74dp</dimen>
     <dimen name="dimen_75px">75dp</dimen>
+    <dimen name="text_size_15">13.0sp</dimen>
+    <dimen name="text_size_14">12.0sp</dimen>
+    <dimen name="text_size_18">16.0sp</dimen>
+    <dimen name="text_size_20">18.0sp</dimen>
+    <dimen name="text_size_16">14.0sp</dimen>
 
+    <dimen name="title_bar_button_size">40.0dip</dimen>
 </resources>
