@@ -8,14 +8,14 @@
                         android:layout_height="fill_parent" android:layout_marginLeft="5.0dip"
                         android:layout_alignParentLeft="true">
             <ImageButton android:gravity="center" android:id="@+id/title_left_btn"
-                         android:background="@drawable/wb_back_btn" android:visibility="invisible"
+                         android:background="@drawable/wb_back_btn"
                          android:layout_width="wrap_content" android:layout_height="wrap_content"
                          android:layout_centerVertical="true"/>
             <Button android:textSize="@dimen/home_right_button_size"
                     android:textColor="@color/wb_title_text_color_selector" android:gravity="center"
                     android:id="@+id/title_left_txt_btn" android:background="@drawable/wb_btn_off"
                     android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true" android:visibility="invisible"/>
         </RelativeLayout>
         <RelativeLayout android:id="@+id/public_title_right_layout" android:layout_width="wrap_content"
                         android:layout_height="fill_parent" android:layout_alignParentRight="true">
