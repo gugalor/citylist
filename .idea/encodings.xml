@@ -18,12 +18,6 @@
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/wb_title_change_map_pressed.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/wb_title_drawable.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/wb_title_search_disabled.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/bg_shop_search.9.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/btn_gray_delete_sel.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/btn_gray_delete_unsel.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/btn_search_sel.9.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/btn_search_unsel.9.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/icon_search.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/topbar_bg.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/wb_back_btn_normal.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/wb_back_btn_pressed.png" charset="UTF-8" />
@@ -36,7 +30,6 @@
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/wb_title_map_disabled.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/wb_title_search_disabled.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_gray_delete_selector.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/drawable/btn_search_selector.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/city_item_bg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/city_search_bg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/wb_back_btn.xml" charset="UTF-8" />

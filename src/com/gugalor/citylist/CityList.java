@@ -32,7 +32,7 @@ public class CityList extends Activity {
     private BaseAdapter adapter;
     private ListView mCityLit;
     private TextView overlay, citysearch;
-    private Button backbutton;
+    private ImageButton backbutton;
     private MyLetterListView letterListView;
     private HashMap<String, Integer> alphaIndexer;
     private String[] sections;
@@ -59,7 +59,7 @@ public class CityList extends Activity {
         setContentView(city_layout);
 
         citysearch = (TextView) city_layout.findViewById(R.id.city_search_edittext);
-        backbutton = (Button) city_layout.findViewById(R.id.title_left_txt_btn);
+        backbutton = (ImageButton) city_layout.findViewById(R.id.title_left_btn);
         mCityLit = (ListView) city_layout.findViewById(R.id.public_allcity_list);
         letterListView = (MyLetterListView) city_layout.findViewById(R.id.cityLetterListView);
 
